@@ -15,9 +15,18 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data = [
-        "title" => "Main",
+        "title" => "I am main",
         "subtitle" => "This is the main",
         "array" => ["A", "B", "C", "D"]
     ];
     return view('homepage', $data);
+});
+
+Route::get('about', function () {
+    $subtitle  = "I am a subtitle made with compact";
+    return view('about', compact("subtitle"));
+});
+
+Route::get('shop', function () {
+    return view('shop');
 });

@@ -18,13 +18,13 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                       <a class="nav-link" href="/">Home </a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="about">About</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item active">
                       <a class="nav-link" href="shop">Shop</a>
                     </li>                    
                   </ul>
@@ -32,15 +32,7 @@
               </nav>
         </header>
         <main class="py-3">
-            <h1>{{ $title }}</h1>
-            <h4>{{ $subtitle }}</h4>
-            <section>
-                <ul>
-                    @foreach ($array as $item)
-                    <li>{{$item}}</li>
-                    @endforeach                  
-                </ul>
-            </section>
+            <h1>I am shop</h1>
         </main>
         <footer class="my-2 text-center">
             <h4>This is the footer</h4>
