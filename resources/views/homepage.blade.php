@@ -14,7 +14,15 @@
             <h4>This is the header</h4>
         </header>
         <main class="py-3">
-            <h2>This is the main</h2>
+            <h1>{{ $title }}</h1>
+            <h4>{{ $subtitle }}</h4>
+            <section>
+                <ul>
+                    @foreach ($array as $item)
+                    <li>{{$item}}</li>
+                    @endforeach                  
+                </ul>
+            </section>
         </main>
         <footer class="my-2 text-center">
             <h4>This is the footer</h4>
