@@ -20,13 +20,13 @@ Route::get('/', function () {
         "array" => ["A", "B", "C", "D"]
     ];
     return view('homepage', $data);
-});
+})->name("home");
 
 Route::get('about', function () {
     $subtitle  = "I am a subtitle made with compact";
     return view('about', compact("subtitle"));
-});
+})->name("about-us");
 
 Route::get('shop', function () {
     return view('shop');
-});
+})->name("shopping");
